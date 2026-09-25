@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Andrei Alexandru Gaita</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Menu di navigazione -->
+  <nav class="navbar">
+    <div class="logo">Portfolio<span>.</span></div>
+    <ul class="nav-links">
+      <li><a href="#about">Chi Sono</a></li>
+      <li><a href="#projects">Timeline</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#contact">Contatti</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero a schermo intero con dissolvenza allo scroll -->
+  <header class="hero-wrapper">
+    <div class="hero-bg" id="heroBg"></div>
+    <div class="hero-content" id="heroContent">
+      <h1>ANDREI ALEXANDRU GAITA</h1>
+      <p>Benvenuto nel mio portfolio, qui potrai scoprire i miei lavori e le mie esperienze.</p>
+      <div class="scroll-indicator">&#x2193;</div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Sezione Chi Sono -->
+    <section id="about" class="section">
+      <h2>Chi Sono?</h2>
+      <div class="card">
+        <p>Mi chiamo Andrei Alexandru Gaita e sono uno studente dell'istituto Carlo Grassi. Ho varie passioni, tra cui la principale è quella di imparare.</p>
+      </div>
+    </section>
+
+    <!-- Sezione Timeline Progetti -->
+    <section id="projects" class="section">
+      <h2>I Miei Anni di Studio & Progetti</h2>
+      <p class="timeline-hint">Clicca su un anno per visualizzare il progetto svolto:</p>
+      
+      <div class="timeline-container">
+        <div class="timeline-line"></div>
+        <div class="timeline-nodes">
+          <button class="node-btn" data-year="1" aria-label="Anno 1">1</button>
+          <button class="node-btn" data-year="2" aria-label="Anno 2">2</button>
+          <button class="node-btn" data-year="3" aria-label="Anno 3">3</button>
+          <button class="node-btn" data-year="4" aria-label="Anno 4">4</button>
+          <button class="node-btn" data-year="5" aria-label="Anno 5">5</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sezione FAQ -->
+    <section id="faq" class="section">
+      <h2>Domande Frequenti (FAQ)</h2>
+      <div class="accordion">
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span>Come realizzo i miei progetti web?</span>
+            <span class="icon">+</span>
+          </button>
+          <div class="accordion-content">
+            <p>Utilizzo principalmente HTML semantico, CSS moderno con Flexbox/Grid e JavaScript puro per garantire velocità, leggerezza e responsività.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span>Qual è il mio percorso formativo?</span>
+            <span class="icon">+</span>
+          </button>
+          <div class="accordion-content">
+            <p>Studio informatica presso l'istituto Carlo Grassi, focalizzandomi su architettura del software, algoritmi e sviluppo web.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span>Sono aperto a collaborazioni o stage?</span>
+            <span class="icon">+</span>
+          </button>
+          <div class="accordion-content">
+            <p>Sì, sono sempre interessato a nuove opportunità formative, progetti open-source e percorsi di crescita nel settore tech.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Finestra Modale Pop-up del Progetto -->
+    <dialog id="project-modal" class="modal">
+      <div class="modal-box">
+        <button id="close-modal" class="modal-close" aria-label="Chiudi finestra">&times;</button>
+        <span id="modal-tag" class="modal-tag">Anno 1</span>
+        <h3 id="modal-title">Titolo Progetto</h3>
+        <p id="modal-tech" class="modal-tech">Tecnologie usate</p>
+        <p id="modal-desc">Descrizione del progetto svolto durante questo anno scolastico.</p>
+        <div class="modal-actions">
+          <a id="modal-link" href="#" target="_blank" class="accent-link">Vedi Progetto / Codice &rarr;</a>
+        </div>
+      </div>
+    </dialog>
+
+    <!-- Sezione Contatti -->
+    <section id="contact" class="section">
+      <h2>Contattami</h2>
+      <div class="card text-center">
+        <p>Puoi scrivermi direttamente al seguente indirizzo:</p>
+        <a href="mailto:tuo-indirizzo@email.com" class="accent-link">tuo-indirizzo@email.com</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Andrei Alexandru Gaita. Tutti i diritti riservati.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
